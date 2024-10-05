@@ -41,12 +41,14 @@ html, body{
 .painel-custon-projetos {
  .p-panel-header, .p-panel-footer, .p-panel-content  {
     background-color: transparent;
+
   }
   .p-toggleable-content .ng-trigger .ng-trigger-panelContent{
     background-color: transparent;
-  }
-}
 
+  }
+  height: 100%;
+}
 
 @media (max-width:767px) {
   /* de 0px até 767px */
