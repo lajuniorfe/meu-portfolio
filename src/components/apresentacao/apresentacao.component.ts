@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { ButtonModule } from 'primeng/button';
+import { FieldsetModule } from 'primeng/fieldset';
 
 @Component({
   selector: 'app-apresentacao',
   standalone: true,
-  imports: [],
+  imports: [ButtonModule, FieldsetModule],
   templateUrl: './apresentacao.component.html',
-  styleUrl: './apresentacao.component.css'
 })
-export class ApresentacaoComponent {
-
-}
+export class ApresentacaoComponent {}

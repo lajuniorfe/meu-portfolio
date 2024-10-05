@@ -1,8 +1,8 @@
 :root {
   --primary-bg-color:#2d3748;
   --primary-font-color:#FFFFFF;
-  --secondary-bg-color: #FFFFFF;
-  --secondary-font-color: #2d3748;
+  --secondary-bg-color: #ffffff;
+  --secondary-font-color: #cbe016;
 }
 
 html, body{
@@ -24,4 +24,46 @@ html, body{
 
 .site-bg-secundary-color {
   background-color: var(--secondary-bg-color);
+}
+
+.fieldset-custon-apresentacao {
+  .p-fieldset-legend, .ng-trigger {
+    background-color: transparent;
+    color: var(--primary-font-color);;
+    border: none;
+   }
+}
+
+.p-fieldset {
+  background-color: transparent;
+}
+
+.painel-custon-projetos {
+ .p-panel-header, .p-panel-footer, .p-panel-content  {
+    background-color: transparent;
+  }
+  .p-toggleable-content .ng-trigger .ng-trigger-panelContent{
+    background-color: transparent;
+  }
+}
+
+
+@media (max-width:767px) {
+  /* de 0px até 767px */
+  .hide-on-small {
+    display: none;
+  }
+  .regra-id {
+    .flex .justify-content-end{
+      display: flex;
+    }
+  }
+
+.grid {
+    flex-direction: column; /* Alinha os itens em coluna se necessário */
+}
+
+.col-8 {
+    width: 100%; /* Faz o menu ocupar toda a largura disponível */
+}
 }

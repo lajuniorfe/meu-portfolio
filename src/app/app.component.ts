@@ -1,13 +1,12 @@
-import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HomeComponent } from "../components/home/home.component";
-import { CardModule } from 'primeng/card';
+import { HomeComponent } from '../components/home/home.component';
+import { Component, HostBinding } from '@angular/core';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HomeComponent, CardModule],
+  imports: [RouterOutlet, HomeComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: [],
 })
 export class AppComponent {
   title = 'meu-portfolio';

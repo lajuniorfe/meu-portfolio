@@ -1,21 +1,52 @@
-<article>
-  <h1 class="site-text-primary">Projetos</h1>
-  <h2 class="site-text-primary">Projetos de código aberto que fiz ao longo dos anos, incluindo este site, um emulador e vários jogos, aplicativos, estruturas e boilerplates.</h2>
-</article>
+<section>
+  <article>
+    <div class="grid">
+      <div class="col-6">
+        <h2 class="site-text-primary">Projetos</h2>
+      </div>
+      <div class="col-6 flex  justify-content-end	">
+        <p-button label="Todos os Projetos" styleClass="site-bg-primary-color border-white" />
+      </div>
+    </div>
+  </article>
 
-<article>
-  <div class="grid">
-    <div class="col-6">
-      <p-card header="Teste1"></p-card>
+  <article>
+    <div class="grid">
+      @for(projeto of projetos;track projeto.nome ){
+      <div class="col-6">
+        <p-panel [toggleable]="true" styleClass="painel-custon-projetos">
+          <ng-template pTemplate="header">
+            <div class="flex align-items-center gap-2">
+              <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" size="large"
+                shape="circle" />
+              <span class="font-bold site-text-primary">
+                {{projeto.nome}}
+              </span>
+            </div>
+          </ng-template>
+          <ng-template pTemplate="footer">
+            <div class="flex flex-wrap align-items-center justify-content-between gap-3">
+              <div class="flex align-items-center gap-2">
+                <p-button label="Sobre" styleClass="site-bg-primary-color border-white	" />
+                <p-button label="Demonstração" styleClass="site-bg-primary-color border-white	" />
+              </div>
+              <span class="site-text-secundary text-xs">
+                {{projeto.ultimaAtualizacao}}
+              </span>
+            </div>
+          </ng-template>
+          <ng-template pTemplate="icons">
+            <button class="p-panel-header-icon p-link mr-2">
+              <span class="pi pi-cog"></span>
+            </button>
+          </ng-template>
+          <p class="m-0 site-text-primary">
+            {{projeto.sobre}}
+          </p>
+        </p-panel>
+      </div>
+      }
+
     </div>
-    <div class="col-6">
-      <p-card header="Teste4"></p-card>
-    </div>
-    <div class="col-6">
-      <p-card header="Teste6"></p-card>
-    </div>
-    <div class="col-6">
-      <p-card header="Teste8"></p-card>
-    </div>
-  </div>
-</article>
+  </article>
+</section>
