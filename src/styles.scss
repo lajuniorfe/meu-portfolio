@@ -1,0 +1,27 @@
+:root {
+  --primary-bg-color:#2d3748;
+  --primary-font-color:#FFFFFF;
+  --secondary-bg-color: #FFFFFF;
+  --secondary-font-color: #2d3748;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+.site-text-primary {
+  color: var(--primary-font-color);
+}
+
+.site-text-secundary {
+  color: var(--secondary-font-color);
+}
+
+.site-bg-primary-color {
+  background-color: var(--primary-bg-color);
+}
+
+.site-bg-secundary-color {
+  background-color: var(--secondary-bg-color);
+}

@@ -1,0 +1,33 @@
+<section class="flex flex-column justify-content-center">
+  <div class=" my-4 mx-8">
+    <article>
+      <div class="grid flex h-4rem">
+        <div class="col-4 justify-content-center">
+          <h1 class="site-text-primary">Luiz Augusto</h1>
+        </div>
+        <div class="col-8">
+        <p-menubar [model]="itensMenu" styleClass="site-bg-primary-color border-none">
+          <ng-template pTemplate="item" let-item >
+            <a [routerLink]="item.route" class="p-menuitem-link">
+              <span [class]="item.icon"></span>
+              <span class="ml-2 site-text-primary">{{ item.label }}</span>
+          </a>
+          </ng-template>
+        </p-menubar>
+        </div>
+      </div>
+    </article>
+    <p-divider />
+    <article>
+      <!-- <app-apresentacao></app-apresentacao> -->
+    </article>
+    <p-divider />
+    <article>
+      <!-- <app-notas></app-notas> -->
+    </article>
+    <p-divider />
+    <article>
+      <!-- <app-projetos></app-projetos> -->
+    </article>
+  </div>
+</section>
