@@ -3,15 +3,23 @@ import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { AvatarModule } from 'primeng/avatar';
 import { PanelModule } from 'primeng/panel';
-
+import { FieldsetModule } from 'primeng/fieldset';
 @Component({
   selector: 'app-projetos',
   standalone: true,
-  imports: [CardModule, ButtonModule, AvatarModule, PanelModule],
+  imports: [
+    CardModule,
+    ButtonModule,
+    AvatarModule,
+    PanelModule,
+    FieldsetModule,
+  ],
   templateUrl: './projetos.component.html',
   styleUrls: [],
 })
 export class ProjetosComponent {
+  painelExpandido: boolean = false;
+
   projetos = [
     {
       nome: 'Meu Portfólio',
