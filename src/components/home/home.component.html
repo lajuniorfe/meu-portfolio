@@ -1,23 +1,7 @@
 <section class="flex flex-column justify-content-center p-2 ">
   <article>
-    <p-menubar [model]="itensMenu" styleClass="site-bg-primary-color border-none align-items-center">
-      <ng-template pTemplate="start" let-item>
-        <div class="grid h-4rem align-items-center">
-          <div class="col-2 pr-3 ml-0">
-            <img src="../../imagens/avatar.svg" width="100" height="100" />
-          </div>
-          <div class="col-10 pl-4 ml-0">
-            <h1 class="site-text-primary hide-on-small">Luiz Augusto</h1>
-          </div>
-        </div>
-      </ng-template>
-      <ng-template pTemplate="item" let-item let-root="root">
-        <a pRipple class="flex align-items-end p-menuitem-link">
-          <span [class]="item.icon"></span>
-          <span class="ml-2 site-text-primary">{{ item.label }}</span>
-        </a>
-      </ng-template>
-    </p-menubar>
+    <app-header></app-header>
+
   </article>
 
   <article>
