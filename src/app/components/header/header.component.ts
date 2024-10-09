@@ -13,17 +13,9 @@ import { ButtonModule } from 'primeng/button';
 export class HeaderComponent {
   itensMenu = [
     {
-      label: 'Sobre mim',
-      icon: 'pi pi-user-plus',
-      url: '/sobre',
-      target: '',
-      items: [
-        {
-          icone: '',
-          nome: '',
-          url: '',
-        },
-      ],
+      label: 'Projetos',
+      icon: 'pi pi-android',
+      url: '#',
     },
     {
       label: 'Social',
@@ -45,40 +37,15 @@ export class HeaderComponent {
       ],
     },
     {
-      label: 'Projetos',
-      icon: 'pi pi-android',
-      url: '#',
-      items: [
-        {
-          icone: '',
-          nome: '',
-          url: '#',
-        },
-      ],
-    },
-    {
-      label: 'Notas',
-      icon: 'pi pi-ticket',
-      url: '#',
-      items: [
-        {
-          icone: '',
-          nome: '',
-          url: '#',
-        },
-      ],
-    },
-    {
       label: 'Artigos',
       icon: 'pi pi-tags',
       url: '#',
-      items: [
-        {
-          icone: '',
-          nome: '',
-          url: '#',
-        },
-      ],
+    },
+    {
+      label: 'Sobre mim',
+      icon: 'pi pi-user-plus',
+      url: '/sobre',
+      target: '',
     },
   ];
 }
