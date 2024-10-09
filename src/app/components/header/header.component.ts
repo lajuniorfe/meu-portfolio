@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { AvatarModule } from 'primeng/avatar';
 import { MenubarModule } from 'primeng/menubar';
 import { ButtonModule } from 'primeng/button';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -48,4 +49,10 @@ export class HeaderComponent {
       target: '',
     },
   ];
+
+  constructor(private readonly router: Router) {}
+
+  navegarRotas(url: any) {
+    this.router.navigate(['/sobre']);
+  }
 }
