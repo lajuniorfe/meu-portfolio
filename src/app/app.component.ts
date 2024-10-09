@@ -1,13 +1,16 @@
 import { RouterOutlet } from '@angular/router';
-import { HomeComponent } from '../components/home/home.component';
-import { Component, HostBinding } from '@angular/core';
+import { Component } from '@angular/core';
+import { HeaderComponent } from './components/header/header.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HomeComponent],
+  imports: [RouterOutlet, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrls: [],
 })
 export class AppComponent {
-  title = 'meu-portfolio';
+  // constructor(private primengConfig: PrimeNGConfig) {}
+  ngOnit() {
+    //this.primengConfig.setTranslation(traducao);
+  }
 }

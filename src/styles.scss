@@ -61,7 +61,7 @@ html, body{
   .p-menuitem-text, .p-menuitem-icon {
     color: var(--primary-font-color);
   }
-  .p-menuitem-active .p-menuitem-text, .p-menuitem-active .p-menuitem-icon{
+  .p-menuitem-active .p-menuitem-text, .p-menuitem-active .p-menuitem-icon, .p-menuitem-link{
     color: var(--primary-font-color);
   }
   .p-menuitem-active .p-menuitem-content, .p-menubar-root-list{
@@ -80,6 +80,15 @@ html, body{
   background-color:var(--primary-bg-color)
 }
 
+.ng-tns-c3223267463-0 {
+  margin-bottom: -10px;
+}
+
+.painel-custom-sobre-mim{
+  .p-card-body {
+    background-color: var(--primary-bg-color);
+  }
+}
 @media (max-width:767px) {
 
 }
