@@ -89,6 +89,13 @@ html, body{
     background-color: var(--primary-bg-color);
   }
 }
+.custom-chip {
+  .p-chip  {
+    background-color: transparent ;
+  }
+}
+
+
 @media (max-width:767px) {
 
 }
