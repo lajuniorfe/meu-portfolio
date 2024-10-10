@@ -14,9 +14,14 @@ import { Router } from '@angular/router';
 export class HeaderComponent {
   itensMenu = [
     {
+      label: 'Home',
+      icon: 'pi pi-android',
+      url: '/home',
+    },
+    {
       label: 'Projetos',
       icon: 'pi pi-android',
-      url: '#',
+      url: '/projetos',
     },
     {
       label: 'Social',
@@ -50,9 +55,5 @@ export class HeaderComponent {
     },
   ];
 
-  constructor(private readonly router: Router) {}
-
-  navegarRotas(url: any) {
-    this.router.navigate(['/sobre']);
-  }
+  constructor() {}
 }

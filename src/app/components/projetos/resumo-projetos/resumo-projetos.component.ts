@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
+import { AvatarModule } from 'primeng/avatar';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
-import { AvatarModule } from 'primeng/avatar';
-import { PanelModule } from 'primeng/panel';
 import { FieldsetModule } from 'primeng/fieldset';
+import { PanelModule } from 'primeng/panel';
+import { Router } from '@angular/router';
+
 @Component({
-  selector: 'app-projetos',
+  selector: 'app-resumo-projetos',
   standalone: true,
   imports: [
     CardModule,
@@ -14,12 +16,11 @@ import { FieldsetModule } from 'primeng/fieldset';
     PanelModule,
     FieldsetModule,
   ],
-  templateUrl: './projetos.component.html',
+  templateUrl: './resumo-projetos.component.html',
   styleUrls: [],
 })
-export class ProjetosComponent {
+export class ResumoProjetosComponent {
   painelExpandido: boolean = false;
-
   projetos = [
     {
       nome: 'Meu Portfólio',
@@ -48,4 +49,10 @@ export class ProjetosComponent {
       sobre: 'Projeto de atendimento robotizado via mensagens.',
     },
   ];
+
+  constructor(private readonly router: Router) {}
+
+  todosProjetos(): void {
+    this.router.navigate(['/projetos']);
+  }
 }
