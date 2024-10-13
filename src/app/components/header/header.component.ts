@@ -15,7 +15,7 @@ export class HeaderComponent {
   itensMenu = [
     {
       label: 'Home',
-      icon: 'pi pi-android',
+      icon: 'pi pi-home',
       url: '/home',
     },
     {
