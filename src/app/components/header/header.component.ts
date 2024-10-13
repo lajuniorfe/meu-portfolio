@@ -16,17 +16,17 @@ export class HeaderComponent {
     {
       label: 'Home',
       icon: 'pi pi-home',
-      url: '/home',
+      url: 'home',
     },
     {
       label: 'Projetos',
       icon: 'pi pi-android',
-      url: '/projetos',
+      url: 'projetos',
     },
     {
       label: 'Sobre mim',
       icon: 'pi pi-user-plus',
-      url: '/sobre',
+      url: 'sobre-mim',
       target: '',
     },
   ];
@@ -34,6 +34,13 @@ export class HeaderComponent {
   constructor(private readonly router: Router) {}
 
   navegarMenu(item: string): void {
-    this.router.navigate([item]);
+    console.log(item);
+    const destino = document.getElementById(item);
+    if (destino) {
+      destino.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
   }
 }

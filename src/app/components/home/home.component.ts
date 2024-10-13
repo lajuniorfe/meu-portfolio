@@ -8,6 +8,7 @@ import { HeaderComponent } from '../header/header.component';
 import { ApresentacaoComponent } from '../apresentacao/apresentacao.component';
 import { ProjetosComponent } from '../../pages/projetos/projetos.component';
 import { ResumoProjetosComponent } from '../projetos/resumo-projetos/resumo-projetos.component';
+import { SobreMimComponent } from '../../pages/sobre-mim/sobre-mim.component';
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -21,6 +22,7 @@ import { ResumoProjetosComponent } from '../projetos/resumo-projetos/resumo-proj
     HeaderComponent,
     ApresentacaoComponent,
     ResumoProjetosComponent,
+    SobreMimComponent,
   ],
   templateUrl: './home.component.html',
   styleUrls: [],

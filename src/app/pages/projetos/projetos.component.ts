@@ -9,7 +9,7 @@ import { TagModule } from 'primeng/tag';
   standalone: true,
   imports: [CardModule, ButtonModule, DataViewModule, TagModule],
   templateUrl: './projetos.component.html',
-  styleUrl: './projetos.component.css',
+  styleUrls: [],
 })
 export class ProjetosComponent {
   @Input() projetosExibir: number | undefined;
