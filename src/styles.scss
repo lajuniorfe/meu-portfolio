@@ -27,18 +27,6 @@ html, body{
   background-color: var(--secondary-bg-color);
 }
 
-.fieldset-custom-apresentacao {
-  .p-fieldset-legend, .ng-trigger {
-    background-color: transparent;
-    color: var(--primary-font-color);;
-    border: none;
-   }
-}
-
-.p-fieldset {
-  background-color: transparent;
-}
-
 .painel-custom-projetos {
  .p-panel-header,  .p-panel-content  {
     background-color: transparent;
@@ -57,31 +45,22 @@ html, body{
   }
   height: 100%;
 }
-.menu-custom-header{
-  .p-menuitem-text, .p-menuitem-icon {
-    color: var(--primary-font-color);
-  }
-  .p-menuitem-active .p-menuitem-text, .p-menuitem-active .p-menuitem-icon, .p-menuitem-link{
-    color: var(--primary-font-color);
-  }
-  .p-menuitem-active .p-menuitem-content, .p-menubar-root-list{
-    background-color: var(--primary-bg-color);
-  }
-  .p-submenu-list{
-    padding: 0;
-  }
+
+.header-customizado {
+  border: none;
 }
 
-.p-menubar .p-menubar-root-list > .p-menuitem:not(.p-highlight):not(.p-disabled) > .p-menuitem-content:hover{
-  background-color:var(--primary-bg-color)
+.btn-contato-personalizado{
+  background-color: transparent;
+  border: none;
+  width: 30px;
+
 }
 
-.p-menubar .p-menuitem:not(.p-highlight):not(.p-disabled).p-focus > .p-menuitem-content{
-  background-color:var(--primary-bg-color)
-}
-
-.ng-tns-c3223267463-0 {
-  margin-bottom: -10px;
+.btn-contato-personalizado:focus {
+  background-color: var(--site-bg-primary-color); /* Muda a cor de fundo ao focar */
+  border: 1px solid transparent; /* Define a borda transparente */
+  outline: none; /* Remove o contorno padrão */
 }
 
 .painel-custom-sobre-mim{
@@ -97,5 +76,8 @@ html, body{
 
 
 @media (max-width:767px) {
+  .responsive-name {
+    display: none;
+  }
 
 }

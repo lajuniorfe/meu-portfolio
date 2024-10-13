@@ -1,11 +1,33 @@
-<div class="card ">
-  <p-menubar [model]="itensMenu"
-    styleClass="site-bg-primary-color border-none align-items-center site-text-primary menu-custom-header">
-    <ng-template pTemplate="item" let-item>
-      <a [routerLink]="item.url" class="p-menuitem-link" [target]="item.target">
-        <span [class]="item.icon"></span>
-        <span class="ml-2">{{ item.label }}</span>
+<p-toolbar styleClass="site-bg-primary-color header-customizado m-2 ">
+  <ng-template pTemplate="start">
+    <div class="flex align-items-center flex-column  responsive-avatar">
+      <div class="flex align-items-center gap-2 ">
+        <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
+        <span class="font-bold text-bluegray-50  responsive-name">
+          Luiz Augusto
+        </span>
+      </div>
+      <div class="flex mt-0 responsive-buttons">
+        <a href="https://www.linkedin.com/in/luiz-augustojunior/" target="_blank">
+          <p-button icon=" pi pi-linkedin" styleClass="btn-contato-personalizado pt-0 focus:site-bg-primary-color" />
+        </a>
+        <a href="https://github.com/lajuniorfe" target="_blank">
+          <p-button icon="pi pi-github" styleClass="btn-contato-personalizado pt-0" />
+        </a>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template pTemplate="center">
+    @for(item of itensMenu; track item.url){
+    <div class="flex flex-wrap align-items-center gap-3">
+      <a (click)="navegarMenu(item.url)"
+        class="inline-flex justify-content-center align-items-center text-white pr-2 border-circle hover:bg-white-alpha-10 transition-all transition-duration-200 cursor-pointer text-decoration-none">
+        <i [class]="item.icon"></i>
+        <p class="m-0 pl-1">{{item.label}}</p>
       </a>
-    </ng-template>
-  </p-menubar>
-</div>
+    </div>
+    }
+  </ng-template>
+  <ng-template pTemplate="end">
+  </ng-template>
+</p-toolbar>

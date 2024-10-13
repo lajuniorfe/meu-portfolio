@@ -1,49 +1,47 @@
-<p-fieldset styleClass="fieldset-custom-apresentacao">
-  <ng-template pTemplate="header">
-    <div class="flex align-items-center gap-2 px-2 ">
-      <span class="font-bold">Projetos</span>
+<article class="p-2">
+  <div class="flex justify-content-between mt-2">
+    <div class="flex justify-content-start p-2">
+      <span class="site-text-primary">Projetos</span>
     </div>
-  </ng-template>
-  <div class="flex  justify-content-end p-2">
-    <p-button label=" Todos os Projetos" styleClass="site-bg-primary-color border-white " (onClick)="todosProjetos()" />
+    <div class="flex  justify-content-end p-2">
+      <p-button label=" Todos os Projetos" styleClass="site-bg-primary-color border-white "
+        (onClick)="todosProjetos()" />
+    </div>
   </div>
-
-  <article class="p-2">
-    <div class="grid">
-      @for(projeto of projetos;track projeto.nome ){
-      <div class="sm:col-12 md:col-12 lg:col-3 mb-1">
-        <p-panel [toggleable]="true" styleClass="painel-custom-projetos">
-          <ng-template pTemplate="header">
+  <div class="grid">
+    @for(projeto of projetos;track projeto.nome ){
+    <div class="sm:col-12 md:col-12 lg:col-3 mb-1">
+      <p-panel [toggleable]="true" styleClass="painel-custom-projetos">
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center gap-2">
+            <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" size="large"
+              shape="circle" />
+            <span class="font-bold site-text-primary">
+              {{projeto.nome}}
+            </span>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="footer">
+          <div class="flex flex-wrap align-items-center justify-content-between gap-3 h-full">
             <div class="flex align-items-center gap-2">
-              <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" size="large"
-                shape="circle" />
-              <span class="font-bold site-text-primary">
-                {{projeto.nome}}
-              </span>
+              <p-button label="Sobre" styleClass="site-bg-primary-color border-white	" />
+              <p-button label="Demonstração" styleClass="site-bg-primary-color border-white	" />
             </div>
-          </ng-template>
-          <ng-template pTemplate="footer">
-            <div class="flex flex-wrap align-items-center justify-content-between gap-3 h-full">
-              <div class="flex align-items-center gap-2">
-                <p-button label="Sobre" styleClass="site-bg-primary-color border-white	" />
-                <p-button label="Demonstração" styleClass="site-bg-primary-color border-white	" />
-              </div>
-              <span class="site-text-secundary text-xs">
-                {{projeto.ultimaAtualizacao}}
-              </span>
-            </div>
-          </ng-template>
-          <ng-template pTemplate="icons">
-            <button class="p-panel-header-icon p-link mr-2">
-              <span class="pi pi-cog"></span>
-            </button>
-          </ng-template>
-          <p class="m-0 site-text-primary h-3rem ">
-            {{projeto.sobre}}
-          </p>
-        </p-panel>
-      </div>
-      }
+            <span class="site-text-secundary text-xs">
+              {{projeto.ultimaAtualizacao}}
+            </span>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="icons">
+          <button class="p-panel-header-icon p-link mr-2">
+            <span class="pi pi-cog"></span>
+          </button>
+        </ng-template>
+        <p class="m-0 site-text-primary h-3rem ">
+          {{projeto.sobre}}
+        </p>
+      </p-panel>
     </div>
-  </article>
-</p-fieldset>
+    }
+  </div>
+</article>

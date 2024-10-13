@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { AvatarModule } from 'primeng/avatar';
 import { MenubarModule } from 'primeng/menubar';
 import { ButtonModule } from 'primeng/button';
+import { ToolbarModule } from 'primeng/toolbar';
 import { Router } from '@angular/router';
-
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [AvatarModule, MenubarModule, ButtonModule],
+  imports: [AvatarModule, MenubarModule, ButtonModule, ToolbarModule],
   templateUrl: './header.component.html',
   styleUrls: [],
 })
@@ -24,30 +24,6 @@ export class HeaderComponent {
       url: '/projetos',
     },
     {
-      label: 'Social',
-      icon: 'pi pi-at',
-      url: '#',
-      items: [
-        {
-          label: 'linkedin',
-          icon: 'pi pi-linkedin',
-          url: 'https://linkedin.com/in/luiz-augustojunior',
-          target: '_blank',
-        },
-        {
-          icon: 'pi pi-github',
-          label: 'GitHub',
-          url: 'https://github.com/lajuniorfe/',
-          target: '_blank',
-        },
-      ],
-    },
-    {
-      label: 'Artigos',
-      icon: 'pi pi-tags',
-      url: '#',
-    },
-    {
       label: 'Sobre mim',
       icon: 'pi pi-user-plus',
       url: '/sobre',
@@ -55,5 +31,9 @@ export class HeaderComponent {
     },
   ];
 
-  constructor() {}
+  constructor(private readonly router: Router) {}
+
+  navegarMenu(item: string): void {
+    this.router.navigate([item]);
+  }
 }
