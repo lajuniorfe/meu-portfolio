@@ -21,7 +21,7 @@ export class ProjetosComponent {
       ultimaAtualizacao: '05/10/2024',
       sobre:
         'Projeto para apresentação técnicas sobre mim e demonstração e apresentação de outros projetos feitos por mim.',
-      imagem: 'icones/cofrinho.jpg',
+      imagem: 'icones/logo.png',
     },
     {
       nome: 'Financeiro',

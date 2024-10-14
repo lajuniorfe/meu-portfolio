@@ -7,7 +7,6 @@ import { DividerModule } from 'primeng/divider';
 import { HeaderComponent } from '../header/header.component';
 import { ApresentacaoComponent } from '../apresentacao/apresentacao.component';
 import { ProjetosComponent } from '../../pages/projetos/projetos.component';
-import { ResumoProjetosComponent } from '../projetos/resumo-projetos/resumo-projetos.component';
 import { SobreMimComponent } from '../../pages/sobre-mim/sobre-mim.component';
 @Component({
   selector: 'app-home',
@@ -21,7 +20,6 @@ import { SobreMimComponent } from '../../pages/sobre-mim/sobre-mim.component';
     DividerModule,
     HeaderComponent,
     ApresentacaoComponent,
-    ResumoProjetosComponent,
     SobreMimComponent,
   ],
   templateUrl: './home.component.html',
