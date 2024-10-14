@@ -1,27 +1,33 @@
-# MeuPortfolio
+# Meu Portfólio - Luiz Augusto Ferreira
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
+Este é o meu portfólio pessoal, onde apresento meus projetos, habilidades e experiências como desenvolvedor. O site foi projetado para ser responsivo e fácil de navegar, destacando meu trabalho na área de tecnologia e inteligência artificial.
 
-## Development server
+## Tecnologias Utilizadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- HTML5
+- SCSS
+- TYPESCRIPT
+- ANGULAR 18.2.6
+- PRIME NG
 
-## Code scaffolding
+## Instalação e execução
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Clone o repositório.
+- Execute npm Install na raiz do projeto
+- execute ng serve ou ng start para rodar o projeto.
+- Ele será executado no endereço: `http://localhost:4200/`.
 
-## Build
+## Exemplos de uso
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Visualização de projetos: Navegue pelos projetos listados, saiba mais sobre eles e utilize a demonstração de aguns que estarão disponiveis.
 
-## Running unit tests
+- Contato: Através dos ícones do LinkdIn e GitHub, poderá encontrar os meus contatos para falar diretamente comigo.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Contribuição
 
-## Running end-to-end tests
+Contribuições são bem-vindas! Se você tiver sugestões ou melhorias, fique à vontade para abrir uma issue ou enviar um pull request.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Contato
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- E-mail: lajuniorferreira@gmail.com
+- LinkedIn: [Luiz Augusto Ferreira dos Santos Junior](https://www.linkedin.com/in/luiz-augustojunior/)
