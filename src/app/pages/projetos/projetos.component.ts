@@ -22,6 +22,7 @@ export class ProjetosComponent {
       sobre:
         'Projeto para apresentação técnicas sobre mim e demonstração e apresentação de outros projetos feitos por mim.',
       imagem: 'icones/logo.png',
+      demonstracao: false,
     },
     {
       nome: 'Financeiro',
@@ -30,6 +31,7 @@ export class ProjetosComponent {
       sobre:
         'Projeto para cadastro de gastos para auxiliar na organização da vida financeira.',
       imagem: 'icones/cofrinho.jpg',
+      demonstracao: true,
     },
     {
       nome: 'Chat',
@@ -37,6 +39,7 @@ export class ProjetosComponent {
       ultimaAtualizacao: '01/01/2000',
       sobre: 'Projeto para gerenciamento de conversas.',
       imagem: 'icones/talk.jpg',
+      demonstracao: false,
     },
     {
       nome: 'Chatboot',
@@ -44,6 +47,7 @@ export class ProjetosComponent {
       ultimaAtualizacao: '01/01/2000',
       sobre: 'Projeto de atendimento robotizado via mensagens.',
       imagem: 'icones/robozinho.jpg',
+      demonstracao: false,
     },
   ];
 }
