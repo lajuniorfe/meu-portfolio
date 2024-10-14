@@ -4,11 +4,11 @@ Este é o meu portfólio pessoal, onde apresento meus projetos, habilidades e ex
 
 ## Tecnologias Utilizadas
 
-- HTML5
-- SCSS
-- TYPESCRIPT
-- ANGULAR 18.2.6
-- PRIME NG
+- **HTML5**: Para a estruturação do conteúdo da web.
+- **SCSS**: Para estilização avançada e organização de CSS.
+- **TypeScript**: Para garantir a tipagem estática e facilitar a manutenção do código.
+- **Angular 18.2.6**: Framework utilizado para o desenvolvimento de aplicações web dinâmicas.
+- **PrimeNG**: Biblioteca de componentes UI para Angular que melhora a experiência do usuário.
 
 ## Instalação e execução
 
@@ -21,7 +21,7 @@ Este é o meu portfólio pessoal, onde apresento meus projetos, habilidades e ex
 
 - Visualização de projetos: Navegue pelos projetos listados, saiba mais sobre eles e utilize a demonstração de aguns que estarão disponiveis.
 
-- Contato: Através dos ícones do LinkdIn e GitHub, poderá encontrar os meus contatos para falar diretamente comigo.
+- Contato: Através dos ícones do LinkedIn e GitHub, poderá encontrar os meus contatos para falar diretamente comigo.
 
 ## Contribuição
 
