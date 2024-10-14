@@ -2,7 +2,7 @@
   <ng-template pTemplate="start">
     <div class="flex align-items-center flex-column responsive-avatar">
       <div class="flex align-items-center gap-2 ">
-        <p-avatar image="icones/eu.jpg" shape="circle" />
+        <p-avatar image="icones/logo.png" shape="circle" />
         <span class="font-bold text-bluegray-50  responsive-name">
           Luiz Augusto
 
@@ -19,6 +19,8 @@
     </div>
   </ng-template>
   <ng-template pTemplate="center">
+  </ng-template>
+  <ng-template pTemplate="end">
     @for(item of itensMenu; track item.url){
     <div class="flex flex-wrap align-items-center gap-3">
       <a (click)="navegarMenu(item.url)"
@@ -28,7 +30,5 @@
       </a>
     </div>
     }
-  </ng-template>
-  <ng-template pTemplate="end">
   </ng-template>
 </p-toolbar>

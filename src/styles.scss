@@ -79,10 +79,17 @@ html, body{
   }
 }
 
+.imagem-produto {
+  width: 100%;
+}
 
 @media (max-width:767px) {
   .responsive-name {
     display: none;
   }
 
+  .imagem-produto {
+    width: 50%;
+
+  }
 }

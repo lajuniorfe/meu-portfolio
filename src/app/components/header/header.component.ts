@@ -4,10 +4,17 @@ import { MenubarModule } from 'primeng/menubar';
 import { ButtonModule } from 'primeng/button';
 import { ToolbarModule } from 'primeng/toolbar';
 import { Router } from '@angular/router';
+import { ImageModule } from 'primeng/image';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [AvatarModule, MenubarModule, ButtonModule, ToolbarModule],
+  imports: [
+    AvatarModule,
+    MenubarModule,
+    ButtonModule,
+    ToolbarModule,
+    ImageModule,
+  ],
   templateUrl: './header.component.html',
   styleUrls: [],
 })
