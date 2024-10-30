@@ -8,9 +8,4 @@ import { HeaderComponent } from './components/header/header.component';
   templateUrl: './app.component.html',
   styleUrls: [],
 })
-export class AppComponent {
-  // constructor(private primengConfig: PrimeNGConfig) {}
-  ngOnit() {
-    //this.primengConfig.setTranslation(traducao);
-  }
-}
+export class AppComponent {}
