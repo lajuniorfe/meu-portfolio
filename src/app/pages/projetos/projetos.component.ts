@@ -32,6 +32,7 @@ export class ProjetosComponent {
         'Projeto para cadastro de gastos para auxiliar na organização da vida financeira.',
       imagem: 'icones/cofrinho.jpg',
       demonstracao: true,
+      url: 'https://lajuniorfe.github.io/cadastro-despesa/',
     },
     {
       nome: 'Chat',

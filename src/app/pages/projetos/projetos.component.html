@@ -28,9 +28,13 @@
                 <div class="flex flex-row-reverse md:flex-row gap-2">
                   <p-button icon="pi pi-plus" [outlined]="true"
                     class="flex-auto md:flex-initial white-space-nowrap site-text-primary" label="Saiba mais" />
-                  <p-button icon="pi pi-play
-                  " class="flex-auto md:flex-initial white-space-nowrap site-text-primary"
-                    [disabled]="!projeto.demonstracao" label="Demonstração" />
+                  @if(projeto.demonstracao){
+                  <a href="{{projeto.url}}" target="_blank"
+                    class="p-button flex-auto text-decoration-none md:flex-initial white-space-nowrap site-text-primary"
+                    style=" text-decoration:none">
+                    <i class="pi pi-play"></i>Demonstração
+                  </a>
+                  }
                 </div>
               </div>
             </div>
